@@ -85,6 +85,9 @@ public class ApplicationController {
 
             log.info(appName + " has been scaled to " + (currentAIs += SCALEFACTOR) + " instances.");
         }
+        else{
+            log.info(appName + " does not need to be scaled");
+        }
     }
 
     @RequestMapping("/scaledown")
